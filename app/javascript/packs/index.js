@@ -10,6 +10,6 @@ document.addEventListener("DOMContentLoaded", () => {
         <App />
       </AppProvider>
     </React.StrictMode>,
-    document.body.appendChild(document.createElement("div"))
+    document.getElementById("root")
   );
 });

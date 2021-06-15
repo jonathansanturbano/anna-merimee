@@ -1,0 +1,25 @@
+header {
+  position: relative;
+  display: flex;
+  height: 100px;
+  width: 100%;
+}
+
+.logo {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: gold;
+  position: absolute;
+  left: 5px;
+  line-height: 100px;
+}
+
+nav {
+  ul {
+    display: flex;
+    justify-content: space-around;
+    li {
+      display: inline;
+    }
+  }
+}

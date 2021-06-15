@@ -11,3 +11,25 @@
   text-transform: uppercase;
   text-align: center;
 }
+
+.admin-button {
+  position: fixed;
+  text-transform: uppercase;
+  top: 10px;
+  left: 10px;
+  background-color: gold;
+  line-height: 70px;
+  width: 70px;
+  border-radius: 50%;
+  text-align: center;
+  color: white;
+  text-decoration: none;
+  box-shadow: 3px 5px 10px rgba(230, 230, 230, 1);
+  transition: all 0.3s;
+
+  &:hover {
+    background-color: white;
+    color: gold;
+    border: 0.5px black solid;
+  }
+}

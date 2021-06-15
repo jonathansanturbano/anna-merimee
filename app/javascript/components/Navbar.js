@@ -7,17 +7,25 @@ const Navbar = () => {
   return (
     <header>
       <Link to="/" className="logo">
-        Home
+        Anna Mérimée
       </Link>
-      <button
-        className="menu-toggle"
-        aria-pressed={isNavbarOpen}
-        aria-expanded={isNavbarOpen}
-        aria-label="Menu"
-        aria-hidden="true"
-        onClick={() => setIsNavbarOpen(!isNavbarOpen)}
-      ></button>
-      <nav>{/** <Links /> */}</nav>
+
+      <nav>
+        <ul>
+          <li>
+            <Link to="/oeuvres">Accueil</Link>
+          </li>
+          <li>
+            <Link to="/oeuvres">Oeuvres</Link>
+          </li>
+          <li>
+            <Link to="/oeuvres">Expositions</Link>
+          </li>
+          <li>
+            <Link to="/oeuvres">À Propos</Link>
+          </li>
+        </ul>
+      </nav>
     </header>
   );
 };

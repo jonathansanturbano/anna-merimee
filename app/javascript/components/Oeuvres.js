@@ -3,9 +3,7 @@ import React from "react";
 const Oeuvres = () => {
   return (
     <section>
-      {oeuvres.map((oeuvre) => {
-        <article key={oeuvre.id}>Hello</article>;
-      })}
+      <p>hello</p>
     </section>
   );
 };

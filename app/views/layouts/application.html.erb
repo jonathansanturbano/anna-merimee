@@ -10,6 +10,9 @@
   </head>
 
   <body>
+    <% if current_user %>
+      <%= link_to "Admin", dashboard_path, class: "admin-button" %>
+    <% end %>
     <%= yield %>
   </body>
 </html>
