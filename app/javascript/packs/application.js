@@ -15,3 +15,9 @@ require("./index");
 //
 // const images = require.context('../images', true)
 // const imagePath = (name) => images(name, true)
+
+import { introOpacity } from "../vanilla/intro_opacity";
+
+document.addEventListener("turbolinks:load", () => {
+  introOpacity();
+});

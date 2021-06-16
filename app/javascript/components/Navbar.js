@@ -10,7 +10,15 @@ const Navbar = () => {
         Anna Mérimée
       </Link>
 
-      <nav>
+      <button className="hamburger">
+        <div>
+          <p>-</p>
+          <p>-</p>
+          <p>-</p>
+        </div>
+      </button>
+      <nav className="menu">
+        <button className="close-modal">&times;</button>
         <ul>
           <li>
             <Link to="/oeuvres">Accueil</Link>

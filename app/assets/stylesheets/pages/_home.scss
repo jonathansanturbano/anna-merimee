@@ -10,12 +10,24 @@
   color: white;
   text-transform: uppercase;
   text-align: center;
+
+  h1 {
+    font-size: 3rem;
+    opacity: 0;
+    transform: translateX(-200%);
+    transition-duration: 1s;
+  }
+  p {
+    font-size: 2rem;
+    opacity: 0;
+    transition-duration: 1s;
+  }
 }
 
 .admin-button {
   position: fixed;
   text-transform: uppercase;
-  top: 10px;
+  bottom: 10px;
   left: 10px;
   background-color: gold;
   line-height: 70px;

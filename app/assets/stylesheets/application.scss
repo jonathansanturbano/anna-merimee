@@ -22,6 +22,16 @@
 body {
   margin: 0;
   padding: 0;
-  background: lightblue;
   font-family: "Rosarivo", serif;
+  color: #a7a384;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  background: none;
+  border: none;
 }
