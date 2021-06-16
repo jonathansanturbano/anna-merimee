@@ -1,5 +1,6 @@
 .hero {
   background-image: url("https://res.cloudinary.com/dkbvm5myl/image/upload/v1621000108/upn4jy3984k6lzwkr868qpu08wo8.jpg");
+  filter: grayscale(1);
   background-position: center;
   height: 100vh;
   width: 100vw;
@@ -10,17 +11,33 @@
   color: white;
   text-transform: uppercase;
   text-align: center;
+  transition: filter 2s ease-out;
 
   h1 {
     font-size: 3rem;
     opacity: 0;
     transform: translateX(-200%);
-    transition-duration: 1s;
+    transition-duration: 3s;
   }
   p {
     font-size: 2rem;
     opacity: 0;
-    transition-duration: 1s;
+    transition-delay: 2.5s;
+    transition-duration: 4s;
+  }
+}
+
+.custom-button {
+  line-height: 70px;
+  width: 70px;
+  border-radius: 50%;
+  text-align: center;
+  text-decoration: none;
+  box-shadow: 3px 5px 10px rgba(230, 230, 230, 1);
+  transition: all 0.3s;
+
+  &:hover {
+    background-color: #d8d3af;
   }
 }
 
@@ -30,18 +47,14 @@
   bottom: 10px;
   left: 10px;
   background-color: gold;
-  line-height: 70px;
-  width: 70px;
-  border-radius: 50%;
-  text-align: center;
   color: white;
-  text-decoration: none;
-  box-shadow: 3px 5px 10px rgba(230, 230, 230, 1);
-  transition: all 0.3s;
+}
 
-  &:hover {
-    background-color: white;
-    color: gold;
-    border: 0.5px black solid;
-  }
+.logout-button {
+  position: fixed;
+  text-transform: uppercase;
+  bottom: 10px;
+  right: 10px;
+  background-color: red;
+  color: white;
 }

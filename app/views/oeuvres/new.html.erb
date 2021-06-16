@@ -1,0 +1,25 @@
+<div class="container">
+  <div class="wrapper">
+    <div class="text-center">
+      <h1>Ajouter une nouvelle oeuvre</h1>
+      <%= simple_form_for(@oeuvre, url: dashboard_path) do |f| %>
+        <%= f.label :nom %>
+        <%= f.text_field :nom %>
+        <%= f.label :dimensions %>
+        <%= f.text_field :dimensions %>
+        <%= f.label :prix %>
+        <%= f.text_field :prix %>
+        <%= f.radio_button :categorie, "Huile" %>
+        <%= f.label :categorie_huile, "Huile" %>
+        <%= f.radio_button :categorie, "Acrylique" %>
+        <%= f.label :categorie_acrylique, "Acrylique" %>
+        <%= f.radio_button :categorie, "Aquarelle" %>
+        <%= f.label :categorie_aquarelle, "Aquarelle" %>
+        <%= f.check_box :disponible %>
+        <%= f.label :disponible, "disponible" %>
+        <%= f.input :photo, as: :file %>
+        <%= f.submit %>
+      <% end %>
+    </div>
+  </div>
+</div>

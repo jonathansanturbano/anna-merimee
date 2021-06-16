@@ -26,6 +26,7 @@ header {
   transition: transform 0.3s ease-in;
   border: black 1px solid;
   background-color: white;
+  border-radius: 8px;
 
   ul {
     text-align: center;
@@ -86,11 +87,16 @@ header {
     width: inherit;
     transform: none;
     border: none;
+    background: none;
 
     ul {
       flex-direction: inherit;
       align-items: center;
       padding-left: 1rem;
     }
+  }
+
+  .close-modal {
+    display: none;
   }
 }

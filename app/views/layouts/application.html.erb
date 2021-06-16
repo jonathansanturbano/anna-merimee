@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>AnnaMerimee</title>
+    <title>Anna Mérimée</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
@@ -11,9 +11,20 @@
   </head>
 
   <body>
+    <%= render "shared/navbar" if params[:action] == "dashboard" || params[:action] == "new" || params[:action] == "create"  %>
     <% if current_user %>
-      <%= link_to "Admin", dashboard_path, class: "admin-button" %>
+      <% unless params[:action] == "dashboard" %>
+        <%= link_to "Admin", dashboard_path, class: "custom-button admin-button" %>
+      <% end %>
+      <%= link_to "Logout", destroy_user_session_path, method: :delete, class: "custom-button logout-button" %>
     <% end %>
     <%= yield %>
+    <% if !flash.empty? %>
+      <div class="alert">
+        <% flash[:error].full_messages.each do |message| %>
+          <p><%= message %></p>
+        <% end %>
+      </div>
+    <% end %>
   </body>
 </html>

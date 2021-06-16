@@ -25,6 +25,15 @@ gem 'jbuilder', '~> 2.7'
 # Authentication
 gem 'devise', '~> 4.2'
 
+# Better forms
+gem 'simple_form'
+
+# Hide Cloudinary key
+gem 'dotenv-rails', groups: [:development, :test]
+
+# Cloud hosting photos
+gem 'cloudinary', '~> 1.16.0'
+
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
 

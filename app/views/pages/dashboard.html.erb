@@ -1,5 +1,13 @@
-<header>
-  <a href="#" class="logo">
-    Anna Mérimée
-  </a>
-</header>
+<div class="container">
+  <% @oeuvres.each do |oeuvre| %>
+    <div class="card">
+      <% if oeuvre.photo.attached? %>
+        <%= cl_image_tag oeuvre.photo.key %>
+      <% end %>
+      <h2><%= oeuvre.nom %></h2>
+      <p><%= oeuvre.categorie %></p>
+      <p><%= oeuvre.prix %></p>
+      <p><%= oeuvre.disponible %></p>
+    </div>
+  <% end %>
+</div>
