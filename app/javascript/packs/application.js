@@ -17,7 +17,11 @@ require("./index");
 // const imagePath = (name) => images(name, true)
 
 import { introOpacity } from "../vanilla/intro_opacity";
+import { previewImageOnFileSelect } from "../vanilla/photo_preview";
+import { initSweetalert } from "../plugins/init_sweetalert";
 
 document.addEventListener("turbolinks:load", () => {
   introOpacity();
+  previewImageOnFileSelect();
+  initSweetalert("#sweet-alert-demo", {});
 });

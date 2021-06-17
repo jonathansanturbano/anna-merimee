@@ -1,7 +1,7 @@
 <div class="container">
   <div class="wrapper">
     <div class="text-center">
-      <h1>Ajouter une nouvelle oeuvre</h1>
+      <h1>Modifiez <%= @oeuvre.nom %></h1>
       <%= simple_form_for(@oeuvre, url: dashboard_path, html: { class: "custom-form" }) do |f| %>
         <div class="flex mx-1">
           <%= f.label :nom, class: "w-150" %>
@@ -33,7 +33,7 @@
           <%= f.label :disponible, "Disponible" %>
         </div>
         <div class="form-photo-align mx-1">
-          <%= f.input :photo, input_html: {class: 'd-none hidden', id: 'photo-input'}, label_html: { class: 'upload-photo'}, label: '📷 Mettre une photo' %>
+          <%= f.input :photo, input_html: {class: 'd-none hidden', id: 'photo-input'}, label_html: { class: 'upload-photo'}, label: '📷 Changer de photo' %>
           <%= image_tag "", width: 300, class: "hidden", id: "photo-preview" %>
         </div>
         <%= f.button :submit, 'Ajouter', class: "form-button mx-1" %>

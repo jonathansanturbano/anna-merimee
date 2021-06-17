@@ -14,6 +14,14 @@ class OeuvresController < ApplicationController
     end
   end
 
+  def edit
+    @oeuvre = Oeuvre.find(params[:id])
+  end
+
+  def destroy
+    redirect_to dashboard_path
+  end
+
   private
 
   def oeuvre_params

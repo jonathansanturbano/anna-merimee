@@ -1,5 +1,38 @@
-.form-control {
-  input {
-    width: 500px;
-  }
+.custom-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.w-150 {
+  width: 150px;
+}
+
+.flex-item-1 {
+  flex: 1;
+}
+
+.form-photo-align {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.upload-photo {
+  border: 1px solid #d3d3d3;
+  padding: 16px 24px;
+  cursor: pointer;
+  font-weight: 500;
+  background: white;
+  border-radius: 2px;
+}
+
+.form-button {
+  width: fit-content;
+  padding: 10px 20px;
+  border-radius: 4px;
+  background-color: green;
+  color: white;
+  align-self: center;
+  font-size: 1.2rem;
 }

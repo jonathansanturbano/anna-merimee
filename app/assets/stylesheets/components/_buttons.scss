@@ -3,3 +3,19 @@
   top: 1rem;
   right: 1rem;
 }
+
+.edit-button {
+  position: absolute;
+  bottom: 5px;
+  left: 5px;
+  font-size: 1.2rem;
+  color: grey;
+}
+
+.delete-button {
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+  font-size: 1.2rem;
+  color: red;
+}

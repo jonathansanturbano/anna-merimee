@@ -19,7 +19,7 @@
       <%= link_to "Logout", destroy_user_session_path, method: :delete, class: "custom-button logout-button" %>
     <% end %>
     <%= yield %>
-    <% if !flash.empty? %>
+    <% if !flash.empty? && flash[:error].present? %>
       <div class="alert">
         <% flash[:error].full_messages.each do |message| %>
           <p><%= message %></p>

@@ -5,5 +5,8 @@ Rails.application.routes.draw do
   get "/dashboard", to: "pages#dashboard"
   get "/nouvelle-oeuvre", to: "oeuvres#new"
   post "/dashboard", to: "oeuvres#create"
+  get "oeuvres/:id/edit", to: "oeuvres#edit", as: "edit_oeuvre"
+  patch "oeuvres/:id", to: "oeuvres#update", as: "update_oeuvre"
+  delete "oeuvres/:id", to: "oeuvres#destroy", as: "destroy_oeuvre"
   get "/home", to: "pages#home"
 end

@@ -28,6 +28,9 @@ gem 'devise', '~> 4.2'
 # Better forms
 gem 'simple_form'
 
+# Fontawesome SASS
+gem 'font-awesome-sass', '~> 5.6.1'
+
 # Hide Cloudinary key
 gem 'dotenv-rails', groups: [:development, :test]
 
