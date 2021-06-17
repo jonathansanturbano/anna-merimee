@@ -1,0 +1,32 @@
+.cards {
+  text-align: center;
+  margin-top: 2rem;
+  display: grid;
+  justify-content: center;
+  grid-gap: 1rem;
+}
+
+.card {
+  background-color: #fffffb;
+  padding: 1rem;
+  border: 0.2px #ede6e6 solid;
+  border-radius: 4px;
+  box-shadow: 3px 5px 30px #a7a384;
+}
+
+.card-info {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.badge {
+  width: fit-content;
+  margin: auto;
+  padding: 4px 10px;
+  border-radius: 4px;
+  color: white;
+}
+
+.badge-disponible {
+  background-color: green;
+}

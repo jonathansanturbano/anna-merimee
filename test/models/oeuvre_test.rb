@@ -1,7 +1,7 @@
 require 'test_helper'
 
 class OeuvreTest < ActiveSupport::TestCase
-  CATEGORIES = ["Huile", "Acrylique", "Aquarelle"]
+  CATEGORIES = ["Huile", "Acrylique", "Aquarelle", "Pastel", "Dessin à l'encre"]
 
   test "Oeuvre needs to have a name" do
     oeuvre = Oeuvre.new
