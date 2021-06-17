@@ -21,16 +21,16 @@ const Navbar = () => {
         <button className="close-modal">&times;</button>
         <ul>
           <li>
-            <Link to="/oeuvres">Accueil</Link>
+            <Link to="/home">Accueil</Link>
           </li>
           <li>
             <Link to="/oeuvres">Oeuvres</Link>
           </li>
           <li>
-            <Link to="/oeuvres">Expositions</Link>
+            <Link to="/expositions">Expositions</Link>
           </li>
           <li>
-            <Link to="/oeuvres">À Propos</Link>
+            <Link to="/a-propos">À Propos</Link>
           </li>
         </ul>
       </nav>
