@@ -1,19 +1,18 @@
 import React from "react";
-import { Carousel } from "react-responsive-carousel";
 
 const PhotoCarousel = () => {
   return (
     <div className="carousel">
-      <div>
+      <div className="carousel-image-container before">
         <img className="carousel-image" src="assets/fenetre.jpg" />
       </div>
-      <div>
+      <div className="carousel-image-container active">
         <img
           className="carousel-image"
           src="assets/les-bords-de-la-rivera.jpg"
         />
       </div>
-      <div>
+      <div className="carousel-image-container next">
         <img className="carousel-image" src="assets/la-terrasse.jpg" />
       </div>
     </div>

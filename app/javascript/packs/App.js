@@ -13,6 +13,9 @@ const App = () => {
           <Route exact path="/home">
             <Home />
           </Route>
+          <Route exact path="/oeuvres">
+            <Oeuvres />
+          </Route>
         </Switch>
       </Router>
     </>

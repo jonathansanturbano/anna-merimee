@@ -5,9 +5,15 @@
   align-items: center;
 }
 
+.carousel-image-container {
+  position: absolute;
+  width: 90vw;
+  margin: 5vw;
+  transition: all 1s ease-in;
+}
+
 .carousel-image {
   height: 300px;
-  width: 500px;
+  width: 100%;
   object-fit: cover;
-  margin: auto 150px;
 }

@@ -4,26 +4,42 @@ import axios from "axios";
 const AppContext = React.createContext();
 
 const AppProvider = ({ children }) => {
-  const [pieces, setPieces] = useState([]);
-  const [isNavbarOpen, setIsNavbarOpen] = useState(false);
-  const { isLinkOpen, setIsLinkOpen } = useState(0);
+  const [oeuvres, setOeuvres] = useState([]);
+  const [categories, setCategories] = useState([
+    "Tout",
+    "Huile",
+    "Acrylique",
+    "Aquarelle",
+  ]);
 
-  const getPieces = () => {
-    axios.get("/api/v1/pieces").then((response) => {
-      const pieces = response.data;
-      setPieces(pieces);
+  const getOeuvres = () => {
+    axios.get("/api/v1/oeuvres").then((response) => {
+      const oeuvres = response.data;
+      setOeuvres(oeuvres);
+    });
+  };
+
+  const filterByCategorie = (categorie) => {
+    if (categorie === "Tout") {
+      return getOeuvres();
+    }
+    axios.get("/api/v1/oeuvres").then((response) => {
+      const oeuvres = response.data;
+      const filteredOeuvres = oeuvres.filter(
+        (oeuvre) => oeuvre.categorie == categorie
+      );
+      setOeuvres(filteredOeuvres);
     });
   };
 
   return (
     <AppContext.Provider
       value={{
-        pieces,
-        getPieces,
-        isNavbarOpen,
-        setIsNavbarOpen,
-        isLinkOpen,
-        setIsLinkOpen,
+        oeuvres,
+        getOeuvres,
+        categories,
+        setCategories,
+        filterByCategorie,
       }}
     >
       {children}

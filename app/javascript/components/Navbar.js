@@ -9,13 +9,8 @@ const Navbar = () => {
       <Link to="/" className="logo">
         Anna Mérimée
       </Link>
-
       <button className="hamburger">
-        <div>
-          <p>--</p>
-          <p>--</p>
-          <p>--</p>
-        </div>
+        <i className="fas fa-bars"></i>
       </button>
       <nav className="menu">
         <button className="close-modal">&times;</button>

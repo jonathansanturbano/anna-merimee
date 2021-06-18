@@ -9,4 +9,10 @@ Rails.application.routes.draw do
   patch "oeuvres/:id", to: "oeuvres#update", as: "update_oeuvre"
   delete "oeuvres/:id", to: "oeuvres#destroy", as: "destroy_oeuvre"
   get "/home", to: "pages#home"
+  namespace :api, defaults: { format: :json } do
+    namespace :v1 do
+      resources :oeuvres, only: [:index]
+    end
+  end
+  get '*path', to: 'pages#home'
 end
