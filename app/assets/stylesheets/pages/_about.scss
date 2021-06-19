@@ -1,0 +1,13 @@
+.about-photo {
+  width: 100%;
+  min-height: 300px;
+  border-radius: 4px;
+  object-fit: cover;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.about-photo-container {
+  margin-top: 2rem;
+  border: 1px solid #a7a384;
+  padding: 0.5rem 1rem;
+}
