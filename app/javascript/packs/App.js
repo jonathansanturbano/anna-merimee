@@ -4,6 +4,7 @@ import Navbar from "../components/Navbar";
 import Oeuvres from "../components/Oeuvres";
 import Home from "../pages/Home";
 import APropos from "../pages/APropos";
+import Expositions from "../pages/Expositions";
 
 const App = () => {
   return (
@@ -19,6 +20,9 @@ const App = () => {
           </Route>
           <Route exact path="/a-propos">
             <APropos />
+          </Route>
+          <Route exact path="/expositions">
+            <Expositions />
           </Route>
         </Switch>
       </Router>

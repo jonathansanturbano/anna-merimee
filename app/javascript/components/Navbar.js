@@ -6,8 +6,8 @@ const Navbar = () => {
   const { isNavbarOpen, setIsNavbarOpen } = useGlobalContext();
   return (
     <header>
-      <Link to="/" className="logo">
-        Anna Mérimée
+      <Link to="/home" className="logo">
+        <h1>Anna Mérimée</h1>
       </Link>
       <button className="hamburger">
         <i className="fas fa-bars"></i>
