@@ -11,6 +11,7 @@ const AppProvider = ({ children }) => {
     "Acrylique",
     "Aquarelle",
   ]);
+  const [isModalOpen, setIsModalOpen] = useState(false);
 
   const getOeuvres = () => {
     axios.get("/api/v1/oeuvres").then((response) => {
@@ -40,6 +41,8 @@ const AppProvider = ({ children }) => {
         categories,
         setCategories,
         filterByCategorie,
+        isModalOpen,
+        setIsModalOpen,
       }}
     >
       {children}
