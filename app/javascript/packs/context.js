@@ -11,25 +11,13 @@ const AppProvider = ({ children }) => {
     "Acrylique",
     "Aquarelle",
   ]);
+  const [categoryFilterIndex, setCategoryFilterIndex] = useState(0);
+  const [isAvailable, setIsAvailable] = useState(false);
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   const getOeuvres = () => {
     axios.get("/api/v1/oeuvres").then((response) => {
-      const oeuvres = response.data;
-      setOeuvres(oeuvres);
-    });
-  };
-
-  const filterByCategorie = (categorie) => {
-    if (categorie === "Tout") {
-      return getOeuvres();
-    }
-    axios.get("/api/v1/oeuvres").then((response) => {
-      const oeuvres = response.data;
-      const filteredOeuvres = oeuvres.filter(
-        (oeuvre) => oeuvre.categorie == categorie
-      );
-      setOeuvres(filteredOeuvres);
+      setOeuvres(response.data);
     });
   };
 
@@ -39,10 +27,12 @@ const AppProvider = ({ children }) => {
         oeuvres,
         getOeuvres,
         categories,
-        setCategories,
-        filterByCategorie,
+        categoryFilterIndex,
+        setCategoryFilterIndex,
         isModalOpen,
         setIsModalOpen,
+        isAvailable,
+        setIsAvailable,
       }}
     >
       {children}

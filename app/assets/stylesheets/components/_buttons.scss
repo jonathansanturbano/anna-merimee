@@ -4,6 +4,17 @@
   right: 1rem;
 }
 
+.filter-button {
+  width: 170px;
+  height: 60px;
+  border: #a7a384 1px solid;
+  border-radius: 8px;
+  text-transform: none;
+  font-size: 1.2rem;
+  background-color: rgba(167, 163, 132, 0);
+  transition: background-color 0.3s ease-in;
+}
+
 .edit-button {
   position: absolute;
   bottom: 5px;

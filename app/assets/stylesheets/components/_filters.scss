@@ -1,6 +1,29 @@
 .filters-list {
   display: flex;
+  overflow: hidden;
+  position: relative;
   list-style: none;
   padding-left: 0;
   justify-content: space-evenly;
 }
+
+.active {
+  display: block;
+}
+
+.disponible-filter-on {
+  background-color: rgba(167, 163, 132, 1);
+  color: white;
+}
+
+.category-active button {
+  text-decoration: underline;
+}
+
+// WORKED FOR COMPUTER SCREEN SIZE
+// .filters-list {
+//   display: flex;
+//   list-style: none;
+//   padding-left: 0;
+//   justify-content: space-evenly;
+// }
