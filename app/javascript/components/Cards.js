@@ -28,11 +28,10 @@ const Cards = () => {
         }
         return (
           <article key={oeuvre.id} className="card">
-            <div className="card-info"></div>
             <img
               src={oeuvre.cloudinary_url}
               alt={oeuvre.nom}
-              style={{ width: "300px" }}
+              style={{ width: "290px" }}
             />
             <h2>{oeuvre.nom}</h2>
             <div className="card-info">
