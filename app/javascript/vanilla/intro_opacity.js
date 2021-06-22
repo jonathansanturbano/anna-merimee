@@ -8,7 +8,6 @@ const introOpacity = () => {
     const entrance = hero.querySelector("p");
     setTimeout(() => {
       anna.style.opacity = 1;
-      anna.style.transform = "translateX(0)";
     }, 0);
     setTimeout(() => {
       entrance.style.opacity = 1;

@@ -2,5 +2,7 @@
   <a href="#" class="logo">
     Anna Mérimée
   </a>
-  <%= link_to "Ajouter une oeuvre", nouvelle_oeuvre_path, class: "add-oeuvre-button" %>
+  <% if params[:action] != "new" %>
+    <%= link_to "Ajouter", nouvelle_oeuvre_path, class: "add-oeuvre-button custom-button" %>
+  <% end %>
 </header>

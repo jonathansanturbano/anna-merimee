@@ -1,34 +1,44 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import { useGlobalContext } from "../packs/context";
 
 const Navbar = () => {
   const { isNavbarOpen, setIsNavbarOpen } = useGlobalContext();
   return (
     <header>
-      <Link to="/home" className="logo">
+      <NavLink to="/accueil" className="logo">
         <h1>Anna Mérimée</h1>
-      </Link>
+      </NavLink>
       <button className="hamburger">
         <i className="fas fa-bars"></i>
       </button>
-      <nav className="menu">
+      <div className="menu-container">
         <button className="close-modal">&times;</button>
-        <ul>
-          <li>
-            <Link to="/home">Accueil</Link>
-          </li>
-          <li>
-            <Link to="/oeuvres">Oeuvres</Link>
-          </li>
-          <li>
-            <Link to="/expositions">Expositions</Link>
-          </li>
-          <li>
-            <Link to="/a-propos">À Propos</Link>
-          </li>
-        </ul>
-      </nav>
+        <nav>
+          <ul>
+            <li>
+              <NavLink to="/accueil" activeClassName="underline">
+                Accueil
+              </NavLink>
+            </li>
+            <li>
+              <NavLink to="/oeuvres" activeClassName="underline">
+                Oeuvres
+              </NavLink>
+            </li>
+            <li>
+              <NavLink to="/expositions" activeClassName="underline">
+                Expositions
+              </NavLink>
+            </li>
+            <li>
+              <NavLink to="/a-propos" activeClassName="underline">
+                À Propos
+              </NavLink>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
   );
 };

@@ -1,7 +1,5 @@
 .carousel {
   display: flex;
-  overflow: scroll;
-  height: calc(100vh - 100px);
   align-items: center;
 }
 
@@ -9,11 +7,25 @@
   position: absolute;
   width: 90vw;
   margin: 5vw;
-  transition: all 1s ease-in;
 }
 
 .carousel-image {
   height: 290px;
   width: 100%;
   object-fit: cover;
+  transition: all 1s ease-in;
+}
+
+@media (min-width: 768px) {
+  .carousel-image {
+    height: 500px;
+  }
+}
+
+.before {
+  transform: translateX(1000px);
+}
+
+.next {
+  transform: translateX(-1000px);
 }

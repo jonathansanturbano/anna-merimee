@@ -1,5 +1,5 @@
 .hero {
-  background-image: url("https://res.cloudinary.com/dkbvm5myl/image/upload/v1621000108/upn4jy3984k6lzwkr868qpu08wo8.jpg");
+  background-image: url("https://res.cloudinary.com/dkbvm5myl/image/upload/v1623924896/Anna%20M%C3%A9rim%C3%A9e/promenade-1_fqws5o.jpg");
   filter: grayscale(1);
   background-position: center;
   height: 100vh;
@@ -16,45 +16,26 @@
   h1 {
     font-size: 3rem;
     opacity: 0;
-    transform: translateX(-200%);
     transition-duration: 3s;
   }
   p {
-    font-size: 2rem;
+    position: relative;
+    width: fit-content;
+    white-space: nowrap;
+    font-style: italic;
+    margin: auto;
     opacity: 0;
     transition-delay: 2.5s;
     transition-duration: 4s;
+
+    &::after {
+      content: "";
+      width: 100%;
+      height: 1px;
+      border: 1px solid;
+      position: absolute;
+      bottom: -5px;
+      left: 0;
+    }
   }
-}
-
-.custom-button {
-  line-height: 70px;
-  width: 70px;
-  border-radius: 50%;
-  text-align: center;
-  text-decoration: none;
-  box-shadow: 3px 5px 10px rgba(230, 230, 230, 1);
-  transition: all 0.3s;
-
-  &:hover {
-    background-color: #d8d3af;
-  }
-}
-
-.admin-button {
-  position: fixed;
-  text-transform: uppercase;
-  bottom: 10px;
-  left: 10px;
-  background-color: gold;
-  color: white;
-}
-
-.logout-button {
-  position: fixed;
-  text-transform: uppercase;
-  bottom: 10px;
-  right: 10px;
-  background-color: red;
-  color: white;
 }

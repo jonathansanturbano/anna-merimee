@@ -56,7 +56,7 @@ const Filters = () => {
         }
         onClick={() => setIsAvailable(!isAvailable)}
       >
-        Disponible
+        Disponibles
       </button>
     </div>
   );

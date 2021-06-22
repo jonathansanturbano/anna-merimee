@@ -1,16 +1,20 @@
 .add-oeuvre-button {
   position: fixed;
-  top: 1rem;
-  right: 1rem;
+  bottom: 10px;
+  left: 10px;
+  background-color: green;
+  text-transform: uppercase;
+  color: white;
 }
 
 .filter-button {
+  margin-top: 1rem;
   width: 170px;
   height: 60px;
   border: #a7a384 1px solid;
   border-radius: 8px;
   text-transform: none;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   background-color: rgba(167, 163, 132, 0);
   transition: background-color 0.3s ease-in;
 }
@@ -19,7 +23,7 @@
   position: absolute;
   bottom: 5px;
   left: 5px;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   color: grey;
 }
 
@@ -27,6 +31,39 @@
   position: absolute;
   bottom: 5px;
   right: 5px;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   color: red;
+}
+
+.custom-button {
+  line-height: 70px;
+  width: 70px;
+  border-radius: 50%;
+  text-align: center;
+  text-decoration: none;
+  box-shadow: 3px 5px 10px rgba(230, 230, 230, 1);
+  transition: all 0.3s;
+  z-index: 1;
+
+  &:hover {
+    background-color: #d8d3af;
+  }
+}
+
+.admin-button {
+  position: fixed;
+  text-transform: uppercase;
+  bottom: 10px;
+  left: 10px;
+  background-color: gold;
+  color: white;
+}
+
+.logout-button {
+  position: fixed;
+  text-transform: uppercase;
+  bottom: 10px;
+  right: 10px;
+  background-color: red;
+  color: white;
 }
