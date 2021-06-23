@@ -15,7 +15,7 @@ const Modal = () => {
         </div>
         <div className="modal-text-container">
           <p className="modal-text">
-            Pour toute demande{" "}
+            Pour toute demande :{" "}
             <a href="mailto:merimee.anna@orange.fr">merimee.anna@orange.fr</a>
           </p>
         </div>

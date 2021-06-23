@@ -18,6 +18,12 @@ class OeuvresController < ApplicationController
     @oeuvre = Oeuvre.find(params[:id])
   end
 
+  def update
+    @oeuvre = Oeuvre.find(params[:id])
+    @oeuvre.update(oeuvre_params)
+    redirect_to dashboard_path
+  end
+
   def destroy
     redirect_to dashboard_path
   end

@@ -44,9 +44,11 @@
   box-shadow: 3px 5px 10px rgba(230, 230, 230, 1);
   transition: all 0.3s;
   z-index: 1;
+  font-size: 0.9rem;
 
   &:hover {
     background-color: #d8d3af;
+    color: black;
   }
 }
 
