@@ -18,9 +18,9 @@ file = URI.open('https://res.cloudinary.com/dkbvm5myl/image/upload/v1623924897/A
 oeuvre.photo.attach(io: file, filename: 'Sommeil')
 oeuvre.save!
 puts "Created #{oeuvre.nom}"
-oeuvre = Oeuvre.new(nom: 'La porte bleue', dimensions: '60 x 80', categorie: 'Huile', prix: 500)
+oeuvre = Oeuvre.new(nom: 'Fenêtre à Uzès', dimensions: '27 x 35', categorie: 'Huile', prix: 500)
 file = URI.open('https://res.cloudinary.com/dkbvm5myl/image/upload/v1623924895/Anna%20M%C3%A9rim%C3%A9e/porte-bleue_vhczjg.jpg')
-oeuvre.photo.attach(io: file, filename: 'La porte bleue')
+oeuvre.photo.attach(io: file, filename: 'Fenêtre à Uzès')
 oeuvre.save!
 puts "Created #{oeuvre.nom}"
 oeuvre = Oeuvre.new(nom: 'Pivoines', dimensions: '60 x 50', categorie: 'Acrylique', prix: 500)
@@ -28,9 +28,9 @@ file = URI.open('https://res.cloudinary.com/dkbvm5myl/image/upload/v1623924893/A
 oeuvre.photo.attach(io: file, filename: 'Pivoines')
 oeuvre.save!
 puts "Created #{oeuvre.nom}"
-oeuvre = Oeuvre.new(nom: 'Automne', dimensions: '60 x 50', categorie: 'Aquarelle', prix: 500)
+oeuvre = Oeuvre.new(nom: 'Porte bleue', dimensions: '60 x 50', categorie: 'Aquarelle', prix: 500)
 file = URI.open('https://res.cloudinary.com/dkbvm5myl/image/upload/v1623924893/Anna%20M%C3%A9rim%C3%A9e/automne_jjfaso.jpg')
-oeuvre.photo.attach(io: file, filename: 'Automne')
+oeuvre.photo.attach(io: file, filename: 'Porte bleue')
 oeuvre.save!
 puts "Created #{oeuvre.nom}"
 oeuvre = Oeuvre.new(nom: 'Artichauts (Encadré)', dimensions: '50 x 36', categorie: 'Aquarelle', prix: 500)
@@ -43,14 +43,14 @@ file = URI.open('https://res.cloudinary.com/dkbvm5myl/image/upload/v1623924895/A
 oeuvre.photo.attach(io: file, filename: 'Poires')
 oeuvre.save!
 puts "Created #{oeuvre.nom}"
-oeuvre = Oeuvre.new(nom: 'Artichauts sur bois', dimensions: '40 x 30', categorie: 'Huile', prix: 500)
+oeuvre = Oeuvre.new(nom: 'Artichauts', dimensions: '40 x 30', categorie: 'Huile', prix: 500)
 file = URI.open('https://res.cloudinary.com/dkbvm5myl/image/upload/v1623924888/Anna%20M%C3%A9rim%C3%A9e/artichauts-sur-bois_nfgk1y.jpg')
-oeuvre.photo.attach(io: file, filename: 'Artichauts sur bois')
+oeuvre.photo.attach(io: file, filename: 'Artichauts')
 oeuvre.save!
 puts "Created #{oeuvre.nom}"
-oeuvre = Oeuvre.new(nom: 'Fenêtre à ?', dimensions: '27 x 36', categorie: 'Huile', prix: 500)
+oeuvre = Oeuvre.new(nom: 'En regardant par la fenêtre', dimensions: '92 x 65', categorie: 'Huile', prix: 500)
 file = URI.open('https://res.cloudinary.com/dkbvm5myl/image/upload/v1623924890/Anna%20M%C3%A9rim%C3%A9e/fenetre-a-_dujcen.jpg')
-oeuvre.photo.attach(io: file, filename: 'Fenêtre à ?')
+oeuvre.photo.attach(io: file, filename: 'En regardant par la fenêtre')
 oeuvre.save!
 puts "Created #{oeuvre.nom}"
 oeuvre = Oeuvre.new(nom: 'Les bords de la rivière', dimensions: '100 x 80', categorie: 'Huile', prix: 500)
@@ -73,17 +73,17 @@ file = URI.open('https://res.cloudinary.com/dkbvm5myl/image/upload/v1623924891/A
 oeuvre.photo.attach(io: file, filename: 'Pivoines roses')
 oeuvre.save!
 puts "Created #{oeuvre.nom}"
-oeuvre = Oeuvre.new(nom: "L'ombre de l'arbre", dimensions: '46 x 60', categorie: '46 x 60', prix: 500)
+oeuvre = Oeuvre.new(nom: "Parcs les serres d'Auteuil", dimensions: '60 x 60', categorie: '46 x 60', prix: 500)
 file = URI.open('https://res.cloudinary.com/dkbvm5myl/image/upload/v1623924887/Anna%20M%C3%A9rim%C3%A9e/lombre-de-larbre_mj0gkk.jpg')
-oeuvre.photo.attach(io: file, filename: "L'ombre de l'arbre")
-oeuvre.save!
-puts "Created #{oeuvre.nom}"
-oeuvre = Oeuvre.new(nom: "Parcs les serres d'Auteuil", dimensions: '60 x 60', categorie: 'Huile', prix: 500)
-file = URI.open('https://res.cloudinary.com/dkbvm5myl/image/upload/v1623924894/Anna%20M%C3%A9rim%C3%A9e/parcs-les-serres-dauteuil_vvk7jy.jpg')
 oeuvre.photo.attach(io: file, filename: "Parcs les serres d'Auteuil")
 oeuvre.save!
 puts "Created #{oeuvre.nom}"
-oeuvre = Oeuvre.new(nom: 'Pins parasol à Rome', dimensions: '60 x 60', categorie: 'Huile', prix: 500)
+oeuvre = Oeuvre.new(nom: "L'ombre de l'arbre", dimensions: '46 x 60', categorie: 'Huile', prix: 500)
+file = URI.open('https://res.cloudinary.com/dkbvm5myl/image/upload/v1623924894/Anna%20M%C3%A9rim%C3%A9e/parcs-les-serres-dauteuil_vvk7jy.jpg')
+oeuvre.photo.attach(io: file, filename: "L'ombre de l'arbre")
+oeuvre.save!
+puts "Created #{oeuvre.nom}"
+oeuvre = Oeuvre.new(nom: 'Pins parasol à Rome', dimensions: '46 x 60', categorie: 'Huile', prix: 500)
 file = URI.open('https://res.cloudinary.com/dkbvm5myl/image/upload/v1623924890/Anna%20M%C3%A9rim%C3%A9e/pins-parasol-a-rome_azoygl.jpg')
 oeuvre.photo.attach(io: file, filename: 'Pins parasol à Rome')
 oeuvre.save!

@@ -7,6 +7,6 @@ class PagesController < ApplicationController
   end
 
   def dashboard
-    @oeuvres = Oeuvre.all
+    @oeuvres = Oeuvre.all.includes(photo_attachment: :blob)
   end
 end

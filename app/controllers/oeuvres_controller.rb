@@ -6,12 +6,12 @@ class OeuvresController < ApplicationController
 
   def create
     @oeuvre = Oeuvre.new(oeuvre_params)
-    if @oeuvre.save
-      redirect_to dashboard_path
-    else
-      flash.now[:error] = @oeuvre.errors
-      render :new
-    end
+      if is_anna? && @oeuvre.save
+        redirect_to dashboard_path
+      else
+        flash.now[:error] = @oeuvre.errors
+        render :new
+      end
   end
 
   def edit
@@ -25,12 +25,18 @@ class OeuvresController < ApplicationController
   end
 
   def destroy
-    redirect_to dashboard_path
+    @oeuvre = Oeuvre.find(params[:id])
+    @oeuvre.delete
+    redirect_to dashboard_path, notice: "#{@oeuvre.nom} a été suprimée"
   end
 
   private
 
   def oeuvre_params
     params.require(:oeuvre).permit(:nom, :dimensions, :prix, :categorie, :disponible, :photo)
+  end
+
+  def is_anna?
+    current_user.email == "merimee.anna@orange.fr"
   end
 end

@@ -28,19 +28,19 @@ const Cards = () => {
         }
         return (
           <article key={oeuvre.id} className="image-card">
-            <div>
-              <img src={oeuvre.cloudinary_url} alt={oeuvre.nom} />
-            </div>
+            <img src={oeuvre.cloudinary_url} alt={oeuvre.nom} />
             <div className="image-card-hover-container">
               <div className="image-card-hover">
                 <h2>{oeuvre.nom}</h2>
                 <div>
-                  <p>{oeuvre.categorie}</p>
+                  <p className="category-tag">{oeuvre.categorie}</p>
                   <div className="image-card-hover-info">
                     <p>{oeuvre.prix}€</p>
                     <p>{oeuvre.dimensions}</p>
                   </div>
-                  <p>{oeuvre.disponible ? "Disponible" : "Vendu"}</p>
+                  <p className="sold-tag">
+                    {oeuvre.disponible ? "Disponible" : "Vendu"}
+                  </p>
                 </div>
               </div>
             </div>
