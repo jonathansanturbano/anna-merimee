@@ -18,10 +18,13 @@
 
 @import "font-awesome-sprockets";
 @import "font-awesome";
-@import "bootstrap/dist/css/bootstrap.min.css";
 
 @import "pages/index";
 @import "components/index";
+
+@import "swiper/swiper.scss";
+@import "swiper/components/navigation/navigation.scss";
+@import "bootstrap/dist/css/bootstrap.min.css";
 
 body {
   margin: 0;
