@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { Suspense, lazy } from "react";
 import Filters from "../components/Filters";
 import Cards from "../components/Cards";
 

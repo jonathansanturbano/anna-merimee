@@ -1,5 +1,4 @@
 import React, { useState, useContext, useEffect } from "react";
-import images from "../data/carousel_images";
 import axios from "axios";
 
 const AppContext = React.createContext();
@@ -15,7 +14,6 @@ const AppProvider = ({ children }) => {
   const [categoryFilterIndex, setCategoryFilterIndex] = useState(0);
   const [isAvailable, setIsAvailable] = useState(false);
   const [isModalOpen, setIsModalOpen] = useState(false);
-  const [carouselImages, setCarouselImages] = useState(images);
 
   const getOeuvres = () => {
     axios.get("/api/v1/oeuvres").then((response) => {
@@ -35,7 +33,6 @@ const AppProvider = ({ children }) => {
         setIsModalOpen,
         isAvailable,
         setIsAvailable,
-        carouselImages,
       }}
     >
       {children}

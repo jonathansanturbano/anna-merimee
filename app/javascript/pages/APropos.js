@@ -1,11 +1,12 @@
 import React from "react";
+import Image from "../images/about.jpeg";
 
 const APropos = () => {
   return (
     <div className="container">
       <main>
         <div className="about-photo-container">
-          <img src="assets/about.jpg" alt="about" className="about-photo" />
+          <img src={Image} alt="about" className="about-photo" />
         </div>
         <p className="text-justify">
           Anna Mérimée aime les paysages ou plutôt, les vues (ces vedute des
