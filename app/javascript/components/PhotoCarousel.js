@@ -6,6 +6,9 @@ import Fenetre from "../images/fenetre.jpg";
 import Terrasse from "../images/la-terrasse.jpg";
 import Riviere from "../images/les-bords-de-la-rivera.jpg";
 
+import "swiper/swiper.scss";
+import "swiper/components/navigation/navigation.scss";
+
 SwiperCore.use([Navigation, A11y, Autoplay]);
 
 const PhotoCarousel = () => {

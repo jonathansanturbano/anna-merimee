@@ -18,6 +18,7 @@ const Card = (oeuvre) => {
         <Image
           src={oeuvre.cloudinary_url}
           alt={oeuvre.nom}
+          loading="lazy"
           onLoad={() => setImageLoaded(true)}
         >
           <Transformation quality="auto" fetchFormat="auto" />

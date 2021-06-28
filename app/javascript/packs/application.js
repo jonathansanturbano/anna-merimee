@@ -16,10 +16,6 @@ require("./index");
 // const images = require.context('../images', true)
 // const imagePath = (name) => images(name, true)
 
-import "swiper/swiper.scss";
-import "swiper/components/navigation/navigation.scss";
-import "bootstrap/dist/css/bootstrap.min.css";
-
 import { introOpacity } from "../vanilla/intro_opacity";
 import { previewImageOnFileSelect } from "../vanilla/photo_preview";
 import { initSweetalert } from "../plugins/init_sweetalert";
