@@ -1,19 +1,19 @@
 import React from "react";
 import { Image, Transformation, Placeholder } from "cloudinary-react";
-import Spinner from "react-bootstrap/Spinner";
+// import Spinner from "react-bootstrap/Spinner";
 
 const Card = (oeuvre) => {
   const [imageLoaded, setImageLoaded] = React.useState(false);
 
   return (
     <>
-      {imageLoaded === false && (
+      {/*      {imageLoaded === false && (
         <div className="loader">
           <Spinner animation="border" role="status">
             <span className="sr-only">Loading...</span>
           </Spinner>
         </div>
-      )}
+      )}*/}
       <article className="image-card">
         <Image
           src={oeuvre.cloudinary_url}
