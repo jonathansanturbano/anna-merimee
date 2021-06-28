@@ -6,6 +6,8 @@ import Home from "../pages/Home";
 import Oeuvres from "../pages/Oeuvres";
 import APropos from "../pages/APropos";
 import Expositions from "../pages/Expositions";
+import "swiper/swiper.scss";
+import "swiper/components/navigation/navigation.scss";
 
 const App = () => {
   return (
