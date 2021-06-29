@@ -1,5 +1,5 @@
 import React from "react";
-import Image from "../images/about.jpeg";
+import Image from "../images/about.jpg";
 
 const APropos = () => {
   return (

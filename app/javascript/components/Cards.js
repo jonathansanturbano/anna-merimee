@@ -17,7 +17,7 @@ const Cards = () => {
 
   return (
     <div className="image-cards">
-      {oeuvres.map((oeuvre) => {
+      {oeuvres.map((oeuvre, index) => {
         if (isAvailable && oeuvre.disponible == false) {
           return;
         }

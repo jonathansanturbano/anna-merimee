@@ -7,22 +7,23 @@ const Card = (oeuvre) => {
 
   return (
     <>
-      {/*      {imageLoaded === false && (
+      {imageLoaded === false && (
         <div className="loader">
-          <Spinner animation="border" role="status">
-            <span className="sr-only">Loading...</span>
-          </Spinner>
+          <div className="lds-ring">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
         </div>
-      )}*/}
+      )}
       <article className="image-card">
         <Image
           src={oeuvre.cloudinary_url}
           alt={oeuvre.nom}
           loading="lazy"
           onLoad={() => setImageLoaded(true)}
-        >
-          <Transformation quality="auto" fetchFormat="auto" />
-        </Image>
+        ></Image>
         <div className="image-card-hover-container">
           <div className="image-card-hover">
             <h2>{oeuvre.nom}</h2>
