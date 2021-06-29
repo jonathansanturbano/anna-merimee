@@ -35,7 +35,7 @@ const APropos = () => {
           ont leur propre musique.
         </p>
         <p className="text-justify">
-          Jean Orizet de l’Académie Mallarmé mars 2015
+          - Jean Orizet de l’Académie Mallarmé (mars 2015).
         </p>
       </main>
     </div>
