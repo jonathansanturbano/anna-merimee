@@ -14,6 +14,7 @@ const AppProvider = ({ children }) => {
   const [categoryFilterIndex, setCategoryFilterIndex] = useState(0);
   const [isAvailable, setIsAvailable] = useState(false);
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const getOeuvres = () => {
     axios.get("/api/v1/oeuvres").then((response) => {
@@ -33,6 +34,8 @@ const AppProvider = ({ children }) => {
         setIsModalOpen,
         isAvailable,
         setIsAvailable,
+        isMenuOpen,
+        setIsMenuOpen,
       }}
     >
       {children}

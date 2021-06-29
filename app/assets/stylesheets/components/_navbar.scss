@@ -67,9 +67,9 @@ nav {
     font-size: 2rem;
   }
 
-  &:focus + .menu-container {
-    transform: translateX(0);
-  }
+  // &:focus + .menu-container {
+  //   transform: translateX(0);
+  // }
 }
 
 .close-modal {
@@ -77,6 +77,10 @@ nav {
   right: 11px;
   top: -11px;
   font-size: 3.5rem;
+}
+
+.menu-open {
+  transform: translateX(0);
 }
 
 @media (min-width: 768px) {
