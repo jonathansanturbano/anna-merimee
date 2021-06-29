@@ -1,8 +1,10 @@
 .loader {
-  min-height: 300px;
+  height: 300px;
+  position: absolute;
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100%;
 }
 
 .lds-ring {
