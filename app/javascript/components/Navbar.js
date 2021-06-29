@@ -3,13 +3,21 @@ import { NavLink } from "react-router-dom";
 import { useGlobalContext } from "../packs/context";
 
 const Navbar = () => {
-  const { isNavbarOpen, setIsNavbarOpen } = useGlobalContext();
+  const {
+    isNavbarOpen,
+    setIsNavbarOpen,
+    isModalOpen,
+    setIsModalOpen,
+  } = useGlobalContext();
   return (
     <header>
       <NavLink to="/accueil" className="logo">
         <h1>Anna Mérimée</h1>
       </NavLink>
-      <button className="hamburger">
+      <button
+        className="hamburger"
+        onTouchStart={() => setIsModalOpen(!isModalOpen)}
+      >
         <i className="fas fa-bars"></i>
       </button>
       <div className="menu-container">
