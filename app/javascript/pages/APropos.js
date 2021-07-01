@@ -1,7 +1,13 @@
-import React from "react";
+import React, { useEffect } from "react";
+import { Link } from "react-router-dom";
 import Image from "../images/about.jpg";
 
 const APropos = () => {
+  useEffect(() => {
+    document.title = "Anna Mérimée | À Propos";
+    document.getElementsByTagName("meta").description.content =
+      "La vie d'Anna Mérimée";
+  }, []);
   return (
     <div className="container">
       <main>
@@ -37,6 +43,25 @@ const APropos = () => {
         <p className="text-justify">
           - Jean Orizet de l’Académie Mallarmé (mars 2015).
         </p>
+        <div
+          className="text-center"
+          style={{
+            marginTop: "1rem",
+            borderTop: "1px dotted",
+            width: "50%",
+            margin: "auto",
+          }}
+        >
+          <p style={{ fontSize: "1rem" }}>
+            Copyright &copy;2021 Artiste peintre
+          </p>
+          <Link
+            to="/mentions-legales"
+            style={{ textDecoration: "underline", fontStyle: "italic" }}
+          >
+            Mentions Légales
+          </Link>
+        </div>
       </main>
     </div>
   );

@@ -12,7 +12,7 @@ const Navbar = () => {
   return (
     <header>
       <NavLink to="/accueil" className="logo">
-        <h1>Anna Mérimée</h1>
+        Anna Mérimée
       </NavLink>
       <button className="hamburger" onClick={() => setIsMenuOpen(true)}>
         <i className="fas fa-bars"></i>

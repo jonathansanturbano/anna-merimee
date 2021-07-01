@@ -6,6 +6,7 @@ import Home from "../pages/Home";
 import Oeuvres from "../pages/Oeuvres";
 import APropos from "../pages/APropos";
 import Expositions from "../pages/Expositions";
+import MentionsLegales from "../pages/MentionsLegales";
 
 const App = () => {
   return (
@@ -25,6 +26,9 @@ const App = () => {
           </Route>
           <Route exact path="/expositions">
             <Expositions />
+          </Route>
+          <Route exact path="/mentions-legales">
+            <MentionsLegales />
           </Route>
         </Switch>
       </Router>

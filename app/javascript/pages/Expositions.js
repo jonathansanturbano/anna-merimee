@@ -1,6 +1,11 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 const Expositions = () => {
+  useEffect(() => {
+    document.title = "Anna Mérimée | Expositions";
+    document.getElementsByTagName("meta").description.content =
+      "Les expositions dans lesquelles ses oeuvres ont été présentées";
+  }, []);
   return (
     <div className="container">
       <div className="wrapper">
