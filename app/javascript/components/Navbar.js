@@ -14,13 +14,21 @@ const Navbar = () => {
       <NavLink to="/accueil" className="logo">
         Anna Mérimée
       </NavLink>
-      <button className="hamburger" onClick={() => setIsMenuOpen(true)}>
+      <button
+        className="hamburger"
+        aria-label="Open Menu"
+        onClick={() => setIsMenuOpen(true)}
+      >
         <i className="fas fa-bars"></i>
       </button>
       <div
         className={isMenuOpen ? "menu-container menu-open" : "menu-container"}
       >
-        <button className="close-modal" onClick={() => setIsMenuOpen(false)}>
+        <button
+          className="close-modal"
+          aria-label="Close Menu"
+          onClick={() => setIsMenuOpen(false)}
+        >
           &times;
         </button>
         <nav>
