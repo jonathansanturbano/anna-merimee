@@ -5,8 +5,4 @@ class PagesController < ApplicationController
 
   def accueil
   end
-
-  def dashboard
-    @oeuvres = Oeuvre.all.includes(photo_attachment: :blob)
-  end
 end

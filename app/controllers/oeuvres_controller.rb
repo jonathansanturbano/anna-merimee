@@ -1,5 +1,9 @@
 class OeuvresController < ApplicationController
 
+  def index
+    @oeuvres = Oeuvre.all.includes(photo_attachment: :blob)
+  end
+
   def new
     @oeuvre = Oeuvre.new
   end

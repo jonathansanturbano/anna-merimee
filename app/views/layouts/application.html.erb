@@ -20,25 +20,9 @@
   </head>
 
   <body>
-    <%= render "shared/navbar" if params[:action] == "dashboard" || params[:action] == "new" || params[:action] == "create"  %>
-    <% if current_user %>
-      <% unless params[:action] == "dashboard" %>
-        <%= link_to "Admin", dashboard_path, class: "custom-button admin-button" %>
-      <% end %>
-      <%= link_to "Logout", destroy_user_session_path, method: :delete, class: "custom-button logout-button" %>
-    <% end %>
+    <%= render "shared/navbar" if params[:controller] == "oeuvres" %>
+    <%= render "shared/admin_actions" %>
     <%= yield %>
-    <% if !flash.empty? && flash[:error].present? %>
-      <div class="alert">
-        <% flash[:error].full_messages.each do |message| %>
-          <p><%= message %></p>
-        <% end %>
-      </div>
-    <% end %>
-    <% if notice %>
-      <div class="notice">
-        <p><%= notice %></p>
-      </div>
-    <% end %>
+    <%= render "shared/flashes" %>
   </body>
 </html>

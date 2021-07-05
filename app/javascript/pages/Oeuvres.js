@@ -11,8 +11,8 @@ const Oeuvres = () => {
 
   return (
     <>
+      <Filters />
       <div className="container">
-        <Filters />
         <main>
           <Cards />
         </main>

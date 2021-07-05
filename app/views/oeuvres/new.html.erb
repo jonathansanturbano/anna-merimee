@@ -19,20 +19,24 @@
           <label class="w-150">
             Catégorie
           </label>
-          <div class="flex-item-1">
+          <div class="flex-item-1" style="font-size: 0.8rem">
               <%= f.radio_button :categorie, "Huile" %>
               <%= f.label :categorie_huile, "Huile" %>
               <%= f.radio_button :categorie, "Acrylique" %>
               <%= f.label :categorie_acrylique, "Acrylique" %>
               <%= f.radio_button :categorie, "Aquarelle" %>
               <%= f.label :categorie_aquarelle, "Aquarelle" %>
+              <%= f.radio_button :categorie, "Dessin à l'encre" %>
+              <%= f.label :categorie_encre, "Dessin à l'encre" %>
+              <%= f.radio_button :categorie, "Pastel" %>
+              <%= f.label :categorie_pastel, "Pastel" %>
           </div>
         </div>
         <div class="flex content-center mx-1">
           <%= f.check_box :disponible %>
           <%= f.label :disponible, "Disponible" %>
         </div>
-        <div class="form-photo-align mx-1">
+        <div class="form-photo-align mx-1" style="font-size: 0.8rem">
           <%= f.input :photo, input_html: {class: 'd-none hidden', id: 'photo-input'}, label_html: { class: 'upload-photo'}, label: '📷 Mettre une photo' %>
           <%= image_tag "", width: 300, class: "hidden", id: "photo-preview" %>
         </div>

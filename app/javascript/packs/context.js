@@ -10,6 +10,8 @@ const AppProvider = ({ children }) => {
     "Huile",
     "Acrylique",
     "Aquarelle",
+    "Encre",
+    "Pastel",
   ]);
   const [categoryFilterIndex, setCategoryFilterIndex] = useState(0);
   const [isAvailable, setIsAvailable] = useState(false);
