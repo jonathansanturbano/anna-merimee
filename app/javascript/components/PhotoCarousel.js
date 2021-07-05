@@ -2,8 +2,8 @@ import React, { useEffect } from "react";
 import { useGlobalContext } from "../packs/context";
 import SwiperCore, { Navigation, A11y, Autoplay } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
-import Fenetre from "../images/fenetre.jpg";
-import Terrasse from "../images/la-terrasse.jpg";
+import SousBois from "../images/sous-bois.jpg";
+import NatureMorte from "../images/nature-morte.jpg";
 import Riviere from "../images/les-bords-de-la-rivera.jpg";
 
 SwiperCore.use([Navigation, A11y, Autoplay]);
@@ -14,16 +14,20 @@ const PhotoCarousel = () => {
       <div className="home-container">
         <Swiper spaceBetween={50} slidesPerView={1} navigation autoplay>
           <SwiperSlide>
-            <img className="carousel-image" src={Fenetre} alt="fenetre" />
+            <img className="carousel-image" src={SousBois} alt="Sous Bois" />
           </SwiperSlide>
           <SwiperSlide>
-            <img className="carousel-image" src={Terrasse} alt="terrasse" />
+            <img
+              className="carousel-image"
+              src={NatureMorte}
+              alt="Nature Morte"
+            />
           </SwiperSlide>
           <SwiperSlide>
             <img
               className="carousel-image"
               src={Riviere}
-              alt="les-bords-de-la-rivera"
+              alt="Les Bords de la Rivière"
             />
           </SwiperSlide>
         </Swiper>
