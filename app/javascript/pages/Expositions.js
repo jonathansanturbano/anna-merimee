@@ -10,15 +10,15 @@ const Expositions = () => {
     <div className="container">
       <div className="wrapper">
         <main>
-          <h1 className="text-center">Expositions passées</h1>
+          <h1 className="text-center">Expositions</h1>
           <ul className="expositions-list">
-            <li>Galerie Lee (2015)</li>
-            <li>Galerie Étienne de Caussen (2003)</li>
-            <li>Galerie Escuderia - Palazzo Ruspoli Rome (1998)</li>
-            <li>Galerie la Malmaison (1997)</li>
-            <li>Dylan Gallery NY (1995)</li>
-            <li>Patrice Landau NY (1994)</li>
-            <li>Galerie Basamat Casablanca (1994)</li>
+            <li>Galerie Lee - Rue Visconti (2015)</li>
+            <li>Galerie Étienne de Caussen - rue de Seine (2001)</li>
+            <li>L'Escuderia - Palazzo Ruspoli Rome (1998)</li>
+            <li>Galerie Malmaison - Monaco (1997)</li>
+            <li>Dillon Gallery - Soho New York (1995)</li>
+            <li>Patrice Landau - New York (1994)</li>
+            <li>Galerie Basamat - Casablanca (1994)</li>
           </ul>
         </main>
       </div>
