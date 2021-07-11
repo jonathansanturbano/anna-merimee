@@ -6,7 +6,7 @@ const Oeuvres = () => {
   useEffect(() => {
     document.title = "Anna Mérimée | Oeuvres";
     document.getElementsByTagName("meta").description.content =
-      "Les différentes peintures à consulter";
+      "Découvrez sur cette page les oeuvres d'Anna Mérimée. Filtrez selon les types de tableaux (acrylique, aquarelle, encre ou pastel) et vérifiez leur disponibilité.";
   }, []);
 
   return (

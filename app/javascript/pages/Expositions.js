@@ -4,7 +4,7 @@ const Expositions = () => {
   useEffect(() => {
     document.title = "Anna Mérimée | Expositions";
     document.getElementsByTagName("meta").description.content =
-      "Les expositions dans lesquelles ses oeuvres ont été présentées";
+      "Consultez la liste des expositions passées et à venir d'Anna Mérimée afin de n'en rater aucune.";
   }, []);
   return (
     <div className="container">
