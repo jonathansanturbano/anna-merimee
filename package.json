@@ -1,15 +1,12 @@
 {
   "name": "anna_merimee",
-  "engines": {
-    "node": "14.x"
-  },
   "private": true,
   "dependencies": {
     "@babel/preset-react": "^7.14.5",
     "@rails/actioncable": "^6.0.0",
     "@rails/activestorage": "^6.0.0",
     "@rails/ujs": "^6.0.0",
-    "@rails/webpacker": "4.3.0",
+    "@rails/webpacker": "5.3.0",
     "axios": "^0.21.1",
     "babel-plugin-transform-react-remove-prop-types": "^0.4.24",
     "cloudinary-react": "^1.7.0",
