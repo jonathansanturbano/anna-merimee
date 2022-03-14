@@ -1,5 +1,8 @@
 {
   "name": "anna_merimee",
+  "engines": {
+    "node": "14.x"
+  },
   "private": true,
   "dependencies": {
     "@babel/preset-react": "^7.14.5",
@@ -9,7 +12,6 @@
     "@rails/webpacker": "4.3.0",
     "axios": "^0.21.1",
     "babel-plugin-transform-react-remove-prop-types": "^0.4.24",
-    "bootstrap": "4.6.0",
     "cloudinary-react": "^1.7.0",
     "jquery": "^3.6.0",
     "popper.js": "^1.16.1",
