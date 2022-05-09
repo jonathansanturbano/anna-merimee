@@ -27,10 +27,8 @@ const Card = (oeuvre) => {
         ></Image>
         <div className="image-card-hover-container">
           <div className="image-card-hover">
-            <div>
-              <h2>{oeuvre.nom}</h2>
-              <h3>{oeuvre.prix}</h3>
-            </div>
+            <h2>{oeuvre.nom}</h2>
+            <h3>{oeuvre.prix}</h3>
             <div>
               <p className="category-tag">{oeuvre.categorie}</p>
               <div className="image-card-hover-info">
