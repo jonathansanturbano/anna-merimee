@@ -32,6 +32,7 @@ const Card = (oeuvre) => {
               <p className="category-tag">{oeuvre.categorie}</p>
               <div className="image-card-hover-info">
                 <p>{oeuvre.prix}</p>
+                {/**/}
                 <p>{oeuvre.dimensions}</p>
               </div>
               <p className="sold-tag">
