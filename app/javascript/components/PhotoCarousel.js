@@ -12,7 +12,7 @@ const PhotoCarousel = () => {
   return (
     <div className="wrapper">
       <div className="home-container">
-        <Swiper spaceBetween={50} slidesPerView={1} navigation autoplay>
+        <Swiper spaceBetween={50} slidesPerView={1} navigation autoplay speed={2500}>
           <SwiperSlide>
             <img className="carousel-image" src={SousBois} alt="Sous Bois" />
           </SwiperSlide>

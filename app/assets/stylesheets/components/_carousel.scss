@@ -16,6 +16,14 @@
   transition: all 1s ease-in;
 }
 
+.swiper-button-prev {
+    color: #fffffb !important;
+}
+
+.swiper-button-next {
+    color: #fffffb !important;
+}
+
 @media (min-width: 768px) {
   .carousel-image {
     height: 500px;
